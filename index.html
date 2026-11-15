@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StyleKart - Fashion Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">STYLE<span>KART</span></div>
+
+    <nav class="nav">
+        <a href="#" data-category="all">HOME</a>
+        <a href="#" data-category="men">MEN</a>
+        <a href="#" data-category="women">WOMEN</a>
+        <a href="#" data-category="kids">KIDS</a>
+        <a href="#" data-category="beauty">BEAUTY</a>
+    </nav>
+
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for products, brands and more"
+        >
+        🔍
+    </div>
+
+    <div class="header-actions">
+        <button id="wishlistBtn">♡</button>
+        <button id="cartBtn">
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+    </div>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p>NEW SEASON COLLECTION</p>
+
+        <h1>
+            Upgrade Your<br>
+            Everyday Style
+        </h1>
+
+        <p class="hero-text">
+            Discover the latest fashion trends at amazing prices.
+        </p>
+
+        <button class="shop-btn" id="shopNow">
+            SHOP NOW
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="categories">
+
+    <h2>Shop By Category</h2>
+
+    <div class="category-container">
+
+        <button data-category="men">👔 Men</button>
+
+        <button data-category="women">👗 Women</button>
+
+        <button data-category="kids">🧒 Kids</button>
+
+        <button data-category="beauty">💄 Beauty</button>
+
+    </div>
+
+</section>
+
+
+<section class="products-section">
+
+    <div class="section-header">
+
+        <h2>Trending Products</h2>
+
+        <select id="sortSelect">
+
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+
+        </select>
+
+    </div>
+
+
+    <div id="productGrid" class="product-grid"></div>
+
+</section>
+
+
+<!-- CART -->
+
+<div id="cartPanel" class="cart-panel">
+
+    <div class="cart-header">
+
+        <h2>Your Bag</h2>
+
+        <button id="closeCart">✕</button>
+
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-footer">
+
+        <h3>
+            Total:
+            ₹<span id="cartTotal">0</span>
+        </h3>
+
+        <button class="checkout-btn">
+            CHECKOUT
+        </button>
+
+    </div>
+
+</div>
+
+
+<div id="overlay" class="overlay"></div>
+
+
+<footer>
+
+    <div>
+
+        <h3>STYLEKART</h3>
+
+        <p>
+            Fashion for every style.
+        </p>
+
+    </div>
+
+    <div>
+
+        <h4>Customer Service</h4>
+
+        <p>Contact Us</p>
+        <p>Shipping</p>
+        <p>Returns</p>
+
+    </div>
+
+    <div>
+
+        <h4>Follow Us</h4>
+
+        <p>Instagram</p>
+        <p>Facebook</p>
+        <p>YouTube</p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
